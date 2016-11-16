@@ -13,5 +13,15 @@ namespace ContactosApp
         {
             InitializeComponent();
         }
+
+        private void MenuItemModificar_OnClicked(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void MenuItemEliminar_OnClicked(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

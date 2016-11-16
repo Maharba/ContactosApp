@@ -3,9 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ContactosApp"
              x:Class="ContactosApp.MainPage">
-
-  <Label Text="Welcome to Xamarin Forms!"
-           VerticalOptions="Center"
-           HorizontalOptions="Center" />
-
+  <ContentPage.ToolbarItems>
+    <ToolbarItem x:Name="tbiAgregar"></ToolbarItem>
+  </ContentPage.ToolbarItems>
+  <ListView x:Name="lstContactos">
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <ImageCell ImageSource="{Binding Foto}" Text="{Binding Nombre}" Detail="{Binding Telefono}">
+          <ImageCell.ContextActions>
+            <MenuItem Text="Modificar" Clicked="MenuItemModificar_OnClicked"></MenuItem>
+            <MenuItem Text="Eliminar" Clicked="MenuItemEliminar_OnClicked"></MenuItem>
+          </ImageCell.ContextActions>
+        </ImageCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+  </ListView>
 </ContentPage>
