@@ -13,7 +13,7 @@ namespace ContactosApp
         {
             InitializeComponent();
 
-            MainPage = new ContactosApp.MainPage();
+            MainPage = new NavigationPage(new ContactosApp.MainPage());
         }
 
         protected override void OnStart()

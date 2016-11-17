@@ -35,6 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AdministradorAccesoContactos.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -42,6 +43,7 @@
     <Compile Include="ContactoPage.xaml.cs">
       <DependentUpon>ContactoPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ISQLite.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

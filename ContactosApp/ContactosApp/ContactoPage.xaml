@@ -8,7 +8,7 @@
   <StackLayout>
     <Image x:Name="imgFoto" WidthRequest="150" HeightRequest="150" BackgroundColor="Gray" HorizontalOptions="Center"></Image>
     <Entry x:Name="txtNombre" Placeholder="Nombre"></Entry>
-    <Entry x:Name="txtTelefono" Keyboard="Number" Placeholder="Teléfono"></Entry>
+    <Entry x:Name="txtTelefono" Keyboard="Numeric" Placeholder="Teléfono"></Entry>
     <Entry x:Name="txtDireccion" Placeholder="Dirección"></Entry>
     <StackLayout Orientation="Horizontal">
       <Label Text="Favorito"></Label>
